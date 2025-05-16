@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="653.0" prefWidth="854.0" style="-fx-background-color: #BDB76B;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ug.cinema.vistas.PlanificacionCarteleraController">
+   <children>
+      <Label layoutX="270.0" layoutY="14.0" text="Cartelera" textFill="#a81313" textOverrun="CLIP">
+         <font>
+            <Font name="Bodoni MT" size="30.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="cmbPelicula" layoutX="119.0" layoutY="123.0" onAction="#OnSeleccionarPelicula" prefWidth="150.0" />
+      <TableView fx:id="tblCartelera" layoutX="36.0" layoutY="211.0" prefHeight="290.0" prefWidth="631.0">
+        <columns>
+            <TableColumn fx:id="colPelicula" prefWidth="184.66662216186523" text="PELICULA" />
+          <TableColumn fx:id="colSala" prefWidth="160.0" text="SALA" />
+            <TableColumn fx:id="colHorarios" prefWidth="129.0" text="HORARIOS" />
+            <TableColumn fx:id="colPrecio" prefWidth="156.0" text="PRECIO" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="cmbCine" layoutX="119.0" layoutY="63.0" onAction="#OnSeleccionarCine" prefWidth="150.0" />
+      <Label layoutX="38.0" layoutY="61.0" prefHeight="30.0" prefWidth="57.0" text="Cine:" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="121.0" text="Sala" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="20.0" />
+         </font>
+      </Label>
+      <Separator layoutX="19.0" layoutY="91.0" prefHeight="30.0" prefWidth="640.0" />
+      <Separator layoutX="19.0" layoutY="156.0" prefHeight="30.0" prefWidth="640.0" />
+      <TextField fx:id="txtUbicacion" disable="true" layoutX="414.0" layoutY="63.0" prefHeight="25.0" prefWidth="192.0" />
+      <Button fx:id="btnGenerarCartelera" layoutX="352.0" layoutY="121.0" mnemonicParsing="false" onAction="#OnGenerarCartelera" prefHeight="30.0" prefWidth="287.0" style="-fx-background-color: orange;" text="Generar Cartelera con horarios Disponibles" textFill="#ae3838">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="125.0" fitWidth="200.0" layoutX="94.0" layoutY="514.0">
+         <image>
+            <Image url="file:///D:/descargas/wallpaper-stark-iron-man-3.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="112.0" fitWidth="200.0" layoutX="396.0" layoutY="520.0">
+         <image>
+            <Image url="file:///D:/descargas/dbce2152.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="137.0" layoutX="691.0" layoutY="227.0">
+         <image>
+            <Image url="file:///D:/descargas/descarga.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="133.0" layoutX="693.0" layoutY="14.0">
+         <image>
+            <Image url="file:///D:/descargas/descarga%20(1).jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="302.0" layoutY="68.0" text="Ubicación" textFill="WHITE">
+         <font>
+            <Font name="Berlin Sans FB" size="20.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="200.0" fitWidth="140.0" layoutX="690.0" layoutY="439.0">
+         <image>
+            <Image url="file:/D:/descargas/3f17201917d39d9e763a1691b6c08989cb7aa3c5r1-750-1064v2_uhq.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="182.0" layoutY="173.0" text="VIGENCIA: 28 DE AGOSTO AL 03 DE SEPTIEMBRE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
